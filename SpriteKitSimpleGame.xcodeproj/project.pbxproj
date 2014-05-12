@@ -24,6 +24,10 @@
 		9CE9B301191F15D90095DC64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE9B2DC191F15D90095DC64 /* UIKit.framework */; };
 		9CE9B309191F15D90095DC64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CE9B307191F15D90095DC64 /* InfoPlist.strings */; };
 		9CE9B30B191F15D90095DC64 /* SpriteKitSimpleGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE9B30A191F15D90095DC64 /* SpriteKitSimpleGameTests.m */; };
+		9CE9B31A191F19AB0095DC64 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 9CE9B317191F19AB0095DC64 /* background-music-aac.caf */; };
+		9CE9B31B191F19AB0095DC64 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 9CE9B318191F19AB0095DC64 /* pew-pew-lei.caf */; };
+		9CE9B31C191F19AB0095DC64 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9CE9B319191F19AB0095DC64 /* sprites.atlas */; };
+		9CE9B31F192054FB0095DC64 /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE9B31E192054FB0095DC64 /* GameOverScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,11 @@
 		9CE9B308191F15D90095DC64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9CE9B30A191F15D90095DC64 /* SpriteKitSimpleGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKitSimpleGameTests.m; sourceTree = "<group>"; };
 		9CE9B314191F16040095DC64 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9CE9B317191F19AB0095DC64 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
+		9CE9B318191F19AB0095DC64 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
+		9CE9B319191F19AB0095DC64 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		9CE9B31D192054FB0095DC64 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
+		9CE9B31E192054FB0095DC64 /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +139,10 @@
 				9CE9B2F0191F15D90095DC64 /* ViewController.m */,
 				9CE9B2F2191F15D90095DC64 /* MyScene.h */,
 				9CE9B2F3191F15D90095DC64 /* MyScene.m */,
+				9CE9B31D192054FB0095DC64 /* GameOverScene.h */,
+				9CE9B31E192054FB0095DC64 /* GameOverScene.m */,
 				9CE9B2F5191F15D90095DC64 /* Spaceship.png */,
+				9CE9B315191F19AB0095DC64 /* SpriteKitSimpleGameResources */,
 				9CE9B2F7191F15D90095DC64 /* Images.xcassets */,
 				9CE9B2E1191F15D90095DC64 /* Supporting Files */,
 			);
@@ -164,6 +176,24 @@
 				9CE9B307191F15D90095DC64 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CE9B315191F19AB0095DC64 /* SpriteKitSimpleGameResources */ = {
+			isa = PBXGroup;
+			children = (
+				9CE9B316191F19AB0095DC64 /* Sounds */,
+				9CE9B319191F19AB0095DC64 /* sprites.atlas */,
+			);
+			path = SpriteKitSimpleGameResources;
+			sourceTree = "<group>";
+		};
+		9CE9B316191F19AB0095DC64 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9CE9B317191F19AB0095DC64 /* background-music-aac.caf */,
+				9CE9B318191F19AB0095DC64 /* pew-pew-lei.caf */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +243,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Michael Welburn";
 				TargetAttributes = {
+					9CE9B2D4191F15D90095DC64 = {
+						DevelopmentTeam = 9F26EJX37T;
+					};
 					9CE9B2FC191F15D90095DC64 = {
 						TestTargetID = 9CE9B2D4191F15D90095DC64;
 					};
@@ -242,10 +275,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE9B31C191F19AB0095DC64 /* sprites.atlas in Resources */,
+				9CE9B31A191F19AB0095DC64 /* background-music-aac.caf in Resources */,
 				9CE9B2E5191F15D90095DC64 /* InfoPlist.strings in Resources */,
 				9CE9B2F8191F15D90095DC64 /* Images.xcassets in Resources */,
 				9CE9B2F6191F15D90095DC64 /* Spaceship.png in Resources */,
 				9CE9B2EE191F15D90095DC64 /* Main.storyboard in Resources */,
+				9CE9B31B191F19AB0095DC64 /* pew-pew-lei.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE9B31F192054FB0095DC64 /* GameOverScene.m in Sources */,
 				9CE9B2F4191F15D90095DC64 /* MyScene.m in Sources */,
 				9CE9B2F1191F15D90095DC64 /* ViewController.m in Sources */,
 				9CE9B2EB191F15D90095DC64 /* AppDelegate.m in Sources */,
@@ -392,10 +429,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpriteKitSimpleGame/SpriteKitSimpleGame-Prefix.pch";
 				INFOPLIST_FILE = "SpriteKitSimpleGame/SpriteKitSimpleGame-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -406,10 +446,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpriteKitSimpleGame/SpriteKitSimpleGame-Prefix.pch";
 				INFOPLIST_FILE = "SpriteKitSimpleGame/SpriteKitSimpleGame-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -474,6 +517,7 @@
 				9CE9B310191F15D90095DC64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CE9B311191F15D90095DC64 /* Build configuration list for PBXNativeTarget "SpriteKitSimpleGameTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +526,7 @@
 				9CE9B313191F15D90095DC64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
